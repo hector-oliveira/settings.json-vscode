@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Configurações Para O Visual do VsCode
 
-## Getting Started
+Extensão Necessária:
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+apc
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Seettings.json
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+{
+  "symbols.folders.associations": {
+    "functions": "folder-blue",
+    "hooks": "folder-target",
+    "interfaces": "folder-blue-outline",
+    "interface": "folder-blue-outline",
+    "themes": "folder-blue-code",
+    "data": "folder-database",
+    "services": "folder-yellow",
+    "typescript": "folder-blue-code",
+    "ts": "folder-blue-code",
+    "javascript": "folder-yellow-code",
+    "js": "folder-yellow-code",
+    "tests": "folder-red-code",
+    "build": "folder-purple-outline",
+    "builder": "folder-purple-outline",
+    "classes": "folder-red",
+    "class": "folder-red",
+    ".pnpm": "folder-yellow",
+    "@types": "folder-blue",
+    "nodemon": "folder-green"
+  },
+  "symbols.files.associations": {
+    "*.test.tsx": "react-test",
+    "*.test.jsx": "react-test",
+    "*.test.ts": "ts-test"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, .prettier*, tsconfig*, vite*, .babel*, jest*, package-lock*, yarn*, pnpm-lock*, bun.lockb",
+    "tailwind.config*": "tailwind.config*, postcss.config*"
+  },
+  "apc.listRow": {
+    "height": 26
+  },
+  "apc.electron": {
+    "titleBarStyle": "hidden"
+  },
+  "apc.header": {
+    "height": 36
+  },
+  "apc.font.family": "Inter",
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none"
+  },
+  "window.titleBarStyle": "native",
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  /* GENERAL CONFIGURATION */
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "symbols",
+  "symbols.hidesExplorerArrows": false,
+  "workbench.colorTheme": "Min Dark",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.rulers": [80, 120],
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "smooth",
+  "editor.renderLineHighlight": "gutter",
+  "editor.fontLigatures": true,
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "workbench.editor.enablePreview": false,
+  "breadcrumbs.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.statusBar.visible": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "explorer.fileNesting.enabled": true,
+  "codeium.enableCodeLens": false,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "editor.wordWrap": "bounded",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.bracketPairColorization.enabled": true,
+  "hediet.vscode-drawio.resizeImages": null
+}
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
